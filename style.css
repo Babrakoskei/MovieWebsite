@@ -10,11 +10,15 @@ body{
   height: 100vh;;
   width: 100%;
   display: flex;
-  background-image: linear-gradient( 135deg, #9EE2E2  10%, #094344 100%);
+  background-image: linear-gradient( 135deg, #00BCD4  10%, #00BCD4 100%);
+  background-image: url("/pictures/spookyhouse.jpg");
+  background-repeat: no-repeat;
+  text-decoration-color: white;
+  color: white;
 }
 ::selection{
   color: #F2F2F2;
-  background: #389C9E;
+  background: #0096AA;
 }
 body::before,
 body::after{
@@ -27,13 +31,12 @@ body::after{
 }
 body::before{
   clip-path: circle(30% at left 20%);
-  opacity: 0.4;
-  background-image: linear-gradient( 135deg, #0FF0FC  10%, #00717F 100%);
+  background-image: linear-gradient( 135deg, #00BCD4  10%, #00BCD4 100%);
 }
 body::after{
   opacity: 0.4;
   clip-path: circle(25% at right 80%);
-  background-image: linear-gradient( 135deg, #0FF0FC  10%, #00717F 100%);
+  background-image: linear-gradient( 135deg, #00BCD4  10%, #00BCD4 100%);
 }
 header{
   height: 85vh;
@@ -47,6 +50,7 @@ header{
   border-radius: 25px;
   margin: auto;
   position: relative;
+  color: white;
 }
 header .navbar{
   margin: auto;
@@ -56,20 +60,24 @@ header .navbar{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  color: white;
 }
 .navbar .menu{
   display: flex;
   flex-wrap: wrap;
+   color: white;
 }
 .navbar .logo a{
   text-decoration: none;
   font-size: 22px;
   color: #000;
   font-weight: 500;
+  color: white;
 }
 .navbar .menu li{
   list-style: none;
   margin: 0 6px;
+  color: white;
 }
 .navbar .menu a{
   color: #000;
@@ -77,9 +85,10 @@ header .navbar{
   font-size: 17px;
   font-weight: 500;
   transition: all 0.3s ease;
+  color: white;
 }
 .navbar .menu a:hover{
-  color: #F2F2F2;
+  color: #000;
 }
 .navbar .buttons input{
   outline: none;
@@ -92,22 +101,27 @@ header .navbar{
   margin: 0 8px;
   cursor: pointer;
   transition: all 0.3s ease;
-  background-image: linear-gradient( 135deg, #0FF0FC  10%, #00717F 100%);
+  background-image: linear-gradient( 135deg, #00BCD4  10%, #007171 100%);
+  color: white;
 }
 .navbar .buttons input:hover{
   transform: scale(0.97);
+  color: white;
 }
  header .text-content{
    width: 40%;
    margin: 100px 0 0 50px ;
+   color: white;
  }
 .text-content h2{
   font-size: 27px;
   font-weight: 600;
+  color: white;
 }
 .text-content p{
   font-size: 15px;
   margin-top: 10px;
+  color: white;
 }
 header .play-button{
   position: absolute;
@@ -147,6 +161,7 @@ header .play-button{
   }
   .navbar .menu {
     margin: 10px 0 20px 0;
+    color: white;
   }
   header .text-content{
     margin: 30px 0 0 20px ;
@@ -166,14 +181,28 @@ header .play-button{
     padding: 15px 10px;
 }
 }
-
-
-
-
-
-
-
-
-
-
-
+.photo {
+  /* position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 120px;
+  height: 120px;
+  margin:-60px 0 0 -60px;
+  -webkit-animation:spin 4s linear infinite;
+  -moz-animation:spin 4s linear infinite;
+  animation:spin 4s linear infinite;
+  align-items: flex-end;
+  margin-left: 200px; */
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+/*@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+*/
+img{
+  margin-left: 600px;
+}
+.navbar{
+  color: white;
+}
