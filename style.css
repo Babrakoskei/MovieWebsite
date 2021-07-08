@@ -11,7 +11,7 @@ body{
   width: 100%;
   display: flex;
   background-image: linear-gradient( 135deg, #00BCD4  10%, #00BCD4 100%);
-  background-image: url("spookyhouse.jpg");
+  background-image: url(spookyhouse.jpg);
   background-repeat: no-repeat;
   text-decoration-color: white;
   color: white;
